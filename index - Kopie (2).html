@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meine Seite</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+
+    .top-text {
+        margin-top: 40px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .button-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cool-button {
+        width: 250px;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(45deg, #ff00cc, #3333ff);
+        color: white;
+        font-weight: bold;
+        transition: 0.3s ease;
+        box-shadow: 0 0 15px rgba(255,0,204,0.6);
+    }
+
+    .cool-button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 25px rgba(51,51,255,0.9);
+    }
+
+    .small-text {
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 8px;
+    }
+
+    .bottom-text {
+        margin-bottom: 30px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #ccc;
+    }
+</style>
+</head>
+<body>
+
+<div class="top-text">
+    HIER DEIN OBERER TEXT
+</div>
+
+<div class="container">
+
+    <div class="button-box">
+        <button class="cool-button" onclick="openLink('https://drive.google.com/file/d/16ejYHy8MEp2pk0q2fAwWn9gtqBygAMqH/view?usp=drive_link')">Collage</button>
+        <div class="small-text">Kleine Beschreibung für Button 1</div>
+    </div>
+
+    <div class="button-box">
+        <button class="cool-button" onclick="openLink('https://docs.google.com/spreadsheets/d/10povptYHGXgtJpI7sl_1QlLyDlHmQbTOZgwkdgaSeWs/edit')">Schülerranking</button>
+        <div class="small-text">Kleine Beschreibung für Button 2</div>
+    </div>
+
+    <div class="button-box">
+        <button class="cool-button" onclick="openLink('https://docs.google.com/spreadsheets/d/113YDGCWehkAk-R1ItBITHC3NdQKK7dwIkvOFt6guWpk/edit')">Lehrerranking</button>
+        <div class="small-text">Kleine Beschreibung für Button 3</div>
+    </div>
+
+</div>
+
+<div class="bottom-text">
+    ✨ HIER DEIN SLOGAN ✨
+</div>
+
+<script>
+function openLink(url) {
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
